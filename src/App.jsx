@@ -11,6 +11,7 @@ import DisplayMUIGrid from "./components/Layout/Grid/DisplayMUIGrid";
 import DisplayMUIStack from "./components/Layout/Stack/DisplayMUIStack";
 import DisplayMUICard from "./components/Surfaces/Card/DisplayMUICard";
 import DisplayMUIAvatar from "./components/DataDisplay/MUIAvatar/DipsplayMUIAvatar";
+import DisplayMUIBadge from "./components/DataDisplay/MUIBadge/DisplayMUIBadge";
 
 // all Css properties are in here so you don't have to modify one by one
 const MyPaper = (props) => {
@@ -42,6 +43,7 @@ const App = () => {
 			<MyPaper render={<DisplayMUIStack />} />
 			<MyPaper render={<DisplayMUICard />} />
 			<MyPaper render={<DisplayMUIAvatar />} />
+			<MyPaper render={<DisplayMUIBadge />} />
 		</>
 	);
 };
