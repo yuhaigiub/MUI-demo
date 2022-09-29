@@ -23,7 +23,15 @@ const MyPaper = ({ text, elevation }) => {
 
 const MUIPaper = () => {
 	return (
-		<Stack direction="row" spacing={2}>
+		<Stack
+			direction="row"
+			spacing={2}
+			sx={{
+				alignItems: "center",
+				justifyContent: "center",
+				p: 3,
+				boxSizing: "border-box",
+			}}>
 			<MyPaper elevation={0} text="elevation : 0" />
 			<MyPaper text={`variant: outlined (doesn't work with elevation)`} />
 			<MyPaper elevation={12} text="elevation : 12" />
