@@ -13,6 +13,7 @@ import DisplayMUICard from "./components/Surfaces/Card/DisplayMUICard";
 import DisplayMUIAvatar from "./components/DataDisplay/MUIAvatar/DipsplayMUIAvatar";
 import DisplayMUIBadge from "./components/DataDisplay/MUIBadge/DisplayMUIBadge";
 import DisplayMUIChip from "./components/DataDisplay/MUIChip/DisplayMUIChip";
+import DisplayMUITextField from "./components/Inputs/TextField/DisplayMUITextField";
 
 // all Css properties are in here so you don't have to modify one by one
 const MyPaper = (props) => {
@@ -45,6 +46,7 @@ const App = () => {
 			<MyPaper render={<DisplayMUIAvatar />} />
 			<MyPaper render={<DisplayMUIBadge />} />
 			<MyPaper render={<DisplayMUIChip />} />
+			<MyPaper render={<DisplayMUITextField />} />
 		</>
 	);
 };
