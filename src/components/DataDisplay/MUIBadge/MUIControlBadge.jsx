@@ -25,7 +25,15 @@ const MUIControlBadge = () => {
 
 	return (
 		<Box>
-			<Badge badgeContent={msgCount} max={20} invisible={visibility} color="error" sx={{ mr: 3 }}>
+			<Badge
+				badgeContent={msgCount}
+				max={20}
+				invisible={visibility}
+				color="error"
+				onClick={() => {
+					console.log(`You have ${msgCount} unread msg`);
+				}}
+				sx={{ mr: 3 }}>
 				<MailIcon sx={{ width: 32, height: 32 }} />
 			</Badge>
 			<ButtonGroup variant="outlined">
