@@ -24,7 +24,7 @@ const MUIControlBadge = () => {
 	};
 
 	return (
-		<Box>
+		<Box sx={{ alignItems: "center" }}>
 			<Badge
 				badgeContent={msgCount}
 				max={20}

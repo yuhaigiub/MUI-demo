@@ -12,12 +12,12 @@ import DisplayMUIStack from "./components/Layout/Stack/DisplayMUIStack";
 import DisplayMUICard from "./components/Surfaces/Card/DisplayMUICard";
 import DisplayMUIAvatar from "./components/DataDisplay/MUIAvatar/DipsplayMUIAvatar";
 import DisplayMUIBadge from "./components/DataDisplay/MUIBadge/DisplayMUIBadge";
+import DisplayMUIChip from "./components/DataDisplay/MUIChip/DisplayMUIChip";
 
 // all Css properties are in here so you don't have to modify one by one
 const MyPaper = (props) => {
 	return (
 		<Paper
-			maxWidth
 			elevation={12}
 			sx={{
 				p: 3,
@@ -44,6 +44,7 @@ const App = () => {
 			<MyPaper render={<DisplayMUICard />} />
 			<MyPaper render={<DisplayMUIAvatar />} />
 			<MyPaper render={<DisplayMUIBadge />} />
+			<MyPaper render={<DisplayMUIChip />} />
 		</>
 	);
 };
