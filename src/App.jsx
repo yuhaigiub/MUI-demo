@@ -6,9 +6,13 @@ import DisplayMUIButtonGroup from "./components/Inputs/ButtonGroup/DisplayMUIBut
 import DisplayMUIFloatingActionButton from "./components/Inputs/FloatingActionButton/DisplayMUIFloatingActionButton";
 import DisplayMUIBox from "./components/Layout/Box/DisplayMUIBox";
 import DisplayMUIContainer from "./components/Layout/Container/DisplayMUIContainer";
-import DisplayMUIPaper from "./components/Surfaces/MUIPaper/DisplayMUIPaper";
+import DisplayMUIPaper from "./components/Surfaces/Paper/DisplayMUIPaper";
 import DisplayMUIGrid from "./components/Layout/Grid/DisplayMUIGrid";
+import DisplayMUIStack from "./components/Layout/Stack/DisplayMUIStack";
+import DisplayMUICard from "./components/Surfaces/Card/DisplayMUICard";
+import DisplayMUIAvatar from "./components/DataDisplay/MUIAvatar/DipsplayMUIAvatar";
 
+// all Css properties are in here so you don't have to modify one by one
 const MyPaper = (props) => {
 	return (
 		<Paper
@@ -35,6 +39,9 @@ const App = () => {
 			<MyPaper render={<DisplayMUIContainer />} />
 			<MyPaper render={<DisplayMUIPaper />} />
 			<MyPaper render={<DisplayMUIGrid />} />
+			<MyPaper render={<DisplayMUIStack />} />
+			<MyPaper render={<DisplayMUICard />} />
+			<MyPaper render={<DisplayMUIAvatar />} />
 		</>
 	);
 };

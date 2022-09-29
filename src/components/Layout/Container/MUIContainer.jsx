@@ -15,6 +15,8 @@ const MUIContainer = () => {
 					color: "white",
 					"&:hover": {
 						backgroundColor: "primary.main",
+						fontSize: "2rem",
+						textAlign: "center",
 					},
 				}}>
 				Container put your content to the middle of the page!
