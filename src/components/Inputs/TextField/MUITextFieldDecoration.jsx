@@ -1,6 +1,16 @@
 import React from "react";
-import { FormControl, Input, InputLabel, InputAdornment, Stack, TextField } from "@mui/material";
+import {
+	FormControl,
+	Input,
+	InputLabel,
+	InputAdornment,
+	Stack,
+	TextField,
+	OutlinedInput,
+} from "@mui/material";
 import AccountCircle from "@mui/icons-material/AccountCircle";
+
+import { MyFormHelperText } from "../../Utils/MUIuseFormControl";
 
 const MUITextFieldDecoration = () => {
 	return (
@@ -37,6 +47,10 @@ const MUITextFieldDecoration = () => {
 					helperText="Height"
 					InputProps={{ endAdornment: <InputAdornment position="end">cm</InputAdornment> }}
 				/>
+				<FormControl sx={{ width: "25ch" }}>
+					<OutlinedInput placeholder="useFormControl() custom" />
+					<MyFormHelperText />
+				</FormControl>
 			</Stack>
 		</>
 	);
